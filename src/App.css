@@ -187,6 +187,13 @@
       margin-left: 6%;
   }
 
+  .git-hub-link{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    opacity: 50%;
+  }
+
   @keyframes fade-in {  
     0% {opacity: 0;}/*初始状态 透明度为0*/  
     100% {opacity: 1;}/*结束状态 透明度为1*/  
