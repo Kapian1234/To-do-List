@@ -25,9 +25,9 @@ function TodoDetail() {
           <div className='text-detail'>{todo.text}</div>
           <br/><br/><br/>
           <div className='detail-info '>
-            <div className='hvr-forward'>ID: {todo.id}</div>
-            <div className='hvr-forward'>创建于 {yAdded}年{mAdded}月{dAdded}日 {hAdded}:{minAdded}</div>
-            <div>{todo.isComplete?<div>完成于 {yComplete}年{mComplete}月{dComplete}日 {hComplete}:{minComplete}</div>:<div className='hvr-forward'>未完成</div>}</div>        
+            <div className='hvr-forward'>ID: {todo.id}</div><br/>
+            <div className='hvr-forward'>创建于 {yAdded}年{mAdded}月{dAdded}日 {hAdded<10?'0'+hAdded.toString():hAdded}:{minAdded<10?'0'+minAdded.toString():minAdded}</div>
+            <div>{todo.isComplete?<div>完成于 {yComplete}年{mComplete}月{dComplete}日 {hAdded<10?'0'+hAdded.toString():hAdded}:{minComplete<10?'0'+minComplete.toString():minComplete}</div>:<div className='hvr-forward'>未完成</div>}</div>        
           </div>
           
         </div>

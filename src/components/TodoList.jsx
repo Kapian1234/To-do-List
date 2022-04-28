@@ -1,8 +1,12 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import Todo from './Todo'
 import TodoForm from './TodoForm'
 
 function TodoList() {
+
+    useEffect(()=>{
+        document.title='Todo List'
+    })
     
     const [todos,setTodos]=useState(JSON.parse(localStorage.getItem('todolist')) || [])//默认从localStorage读取，若读取不到则设为空数组
     
